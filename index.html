@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luma Motion Study</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="smooth-root">
+      <canvas class="particle-field" aria-hidden="true"></canvas>
+      <div class="ambient-shell" aria-hidden="true">
+        <div class="ambient-gradient gradient-a"></div>
+        <div class="ambient-gradient gradient-b"></div>
+        <div class="ambient-gradient gradient-c"></div>
+        <div class="ambient-noise"></div>
+      </div>
+
+      <div id="smooth-content">
+        <header class="hero section" id="top" data-scene>
+          <div class="hero-copy glass-panel" style="--depth: 0.22">
+            <p class="eyebrow">Interaction System</p>
+            <h1>Motion that feels machined, not animated.</h1>
+            <p class="lede">
+              A premium interaction study with layered parallax, magnetic hover,
+              energy-rich click feedback, and scroll-driven scene choreography.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="magnetic pill primary"
+                href="#details"
+                data-portal-target="details"
+              >
+                Explore System
+              </a>
+              <a
+                class="magnetic pill secondary"
+                href="#showcase"
+                data-portal-target="showcase"
+              >
+                View Showcase
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-scene" aria-hidden="true">
+            <div class="floating-card glass-panel" style="--depth: 0.5">
+              <span class="card-label">Cursor Light</span>
+              <strong>Glass panels breathe with the pointer.</strong>
+            </div>
+            <div class="floating-ring ring-one" style="--depth: 0.12"></div>
+            <div class="floating-ring ring-two" style="--depth: 0.2"></div>
+            <div class="floating-orb orb-one" style="--depth: 0.3"></div>
+            <div class="floating-orb orb-two" style="--depth: 0.42"></div>
+            <div class="device-shell glass-panel" style="--depth: 0.38">
+              <div class="device-topline"></div>
+              <div class="device-grid">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="device-track">
+                <div class="device-track-fill"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <section class="section system-grid" id="details" data-scene>
+            <div class="section-intro">
+              <p class="eyebrow">Interaction Layers</p>
+              <h2>Every response shares the same motion grammar.</h2>
+            </div>
+
+            <div class="feature-grid">
+              <article class="feature-card glass-panel magnetic" style="--depth: 0.18">
+                <p class="feature-kicker">Mouse Movement</p>
+                <h3>Depth and light glide behind the cursor on a spring.</h3>
+                <p>
+                  Foreground surfaces answer quickly, background fields drift
+                  more slowly, and highlights never snap to position.
+                </p>
+              </article>
+
+              <article class="feature-card glass-panel magnetic" style="--depth: 0.28">
+                <p class="feature-kicker">Hover</p>
+                <h3>Magnetic attraction adds lift without losing control.</h3>
+                <p>
+                  Hovered elements scale softly, bias toward the cursor, and
+                  push ambient color and particle density around them.
+                </p>
+              </article>
+
+              <article class="feature-card glass-panel magnetic" style="--depth: 0.16">
+                <p class="feature-kicker">Click</p>
+                <h3>Compression, convergence, then a camera-like transition.</h3>
+                <p>
+                  Press states are tactile first; energy effects and portal
+                  zoom only appear once intent is clear.
+                </p>
+              </article>
+
+              <article class="feature-card glass-panel magnetic" style="--depth: 0.24">
+                <p class="feature-kicker">Scroll</p>
+                <h3>Sections evolve as a scene, not as stacked rectangles.</h3>
+                <p>
+                  Inertial rendering smooths the page while each section shifts
+                  layout, glow, and object depth based on progress.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section showcase" id="showcase" data-scene>
+            <div class="showcase-copy">
+              <p class="eyebrow">Reaction Study</p>
+              <h2>Interactive modules respond like they share a physical space.</h2>
+            </div>
+
+            <div class="showcase-grid">
+              <button class="showcase-card glass-panel magnetic" type="button">
+                <span class="showcase-title">Glide</span>
+                <span class="showcase-body">
+                  Cursor drift bends the lighting plane and pulls the card into
+                  alignment.
+                </span>
+              </button>
+
+              <button class="showcase-card glass-panel magnetic" type="button">
+                <span class="showcase-title">Compress</span>
+                <span class="showcase-body">
+                  Pointer down applies a short mechanical press before rebound.
+                </span>
+              </button>
+
+              <button class="showcase-card glass-panel magnetic" type="button">
+                <span class="showcase-title">Bloom</span>
+                <span class="showcase-body">
+                  Click energy converges nearby particles and releases a clean
+                  radial bloom.
+                </span>
+              </button>
+            </div>
+
+            <div class="showcase-actions">
+              <a
+                class="magnetic pill primary"
+                href="#top"
+                data-portal-target="top"
+              >
+                Replay Intro
+              </a>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <div class="fx-layer" aria-hidden="true">
+      <div class="pointer-glow"></div>
+      <div class="portal-flash"></div>
+      <div class="energy-burst"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

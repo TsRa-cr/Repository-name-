@@ -1,0 +1,14 @@
+[Unit]
+Description=Static site for test.tsraone.com
+After=network.target
+
+[Service]
+Type=simple
+User=linuxuser
+WorkingDirectory=/home/linuxuser/ts-home
+ExecStart=/usr/bin/python3 -m http.server 8012 --directory /home/linuxuser/ts-home
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
